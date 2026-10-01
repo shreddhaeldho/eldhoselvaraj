@@ -1,4 +1,5 @@
-﻿import useReveal from "../hooks/useReveal";
+import { asset } from "../utils/asset";
+import useReveal from "../hooks/useReveal";
 
 function WCard({ className, children }) {
   const ref = useReveal();
@@ -28,7 +29,7 @@ export default function Writing() {
             <h3>Kazhchakaliloode</h3>
             <p>A critically acclaimed film location travelogue — covering the locations, people, and stories behind Malayalam cinema. Winner of the Satyajit Ray Golden Arch Film Award (2025).</p>
             <div className="writing-asset">
-              <img src="/assets/kazhchakaliloode.webp" alt="Kazhchakaliloode book cover"
+              <img src={asset("kazhchakaliloode.webp")} alt="Kazhchakaliloode book cover"
                    onError={e => e.target.parentElement.style.display = "none"} loading="lazy" />
             </div>
           </WCard>

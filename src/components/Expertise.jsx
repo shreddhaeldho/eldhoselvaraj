@@ -1,4 +1,4 @@
-﻿import useReveal from "../hooks/useReveal";
+import useReveal from "../hooks/useReveal";
 
 const CARDS = [
   { num:"01", title:"Production Management",   desc:"End-to-end production planning, scheduling and on-ground execution across films of all scales.",

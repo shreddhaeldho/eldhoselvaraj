@@ -1,4 +1,5 @@
-﻿import useReveal from "../hooks/useReveal";
+import { asset } from "../utils/asset";
+import useReveal from "../hooks/useReveal";
 
 const FILMS = [
   { img: "achuvinte-amma.jpg", title: "Achuvinte Amma", year: 2004, role: "Production Manager", note: "Debut film. Directed by Sathyan Anthikad." },
@@ -19,7 +20,7 @@ function FeatCard({ film }) {
   return (
     <div ref={ref} className="feat-card reveal-up">
       <div className="feat-poster">
-        <img src={`/assets/${film.img}`} alt={film.title}
+        <img src={asset(film.img)} alt={film.title}
              onError={e => e.target.style.display = "none"} />
         <div className="feat-fallback">
           <span className="feat-fallback-title">{film.title.toUpperCase()}</span>

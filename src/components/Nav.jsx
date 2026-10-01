@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
   { href: "#about",       label: "About"       },

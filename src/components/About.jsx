@@ -1,4 +1,5 @@
-﻿import useReveal from "../hooks/useReveal";
+import { asset } from "../utils/asset";
+import useReveal from "../hooks/useReveal";
 
 const TIMELINE = [
   { year: "2004",      title: "Debut — Achuvinte Amma",     desc: "Began career as Production Manager with Sathyan Anthikad's landmark film." },
@@ -51,7 +52,7 @@ export default function About() {
           <div className="about-right">
             <RevealDiv className="about-portrait">
               <div className="about-portrait-frame">
-                <img src="/assets/eldho.jpg" alt="Eldho Selvaraj" loading="lazy" />
+                <img src={asset("eldho.jpg")} alt="Eldho Selvaraj" loading="lazy" />
                 <div className="about-portrait-caption">
                   <span>Eldho Selvaraj</span>
                   <em>20+ Years · Malayalam Cinema</em>

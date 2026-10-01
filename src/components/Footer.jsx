@@ -1,4 +1,4 @@
-﻿const NAV = ["About","Films","Filmography","Writing","Industry","Contact"];
+const NAV = ["About","Films","Filmography","Writing","Industry","Contact"];
 const HREFS = ["#about","#featured","#filmography","#writing","#industry","#contact"];
 
 export default function Footer() {

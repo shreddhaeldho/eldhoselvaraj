@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Loader       from "./components/Loader";
 import Cursor       from "./components/Cursor";
 import Nav          from "./components/Nav";

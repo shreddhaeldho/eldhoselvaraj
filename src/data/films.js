@@ -1,4 +1,4 @@
-﻿export const FILMS = [
+export const FILMS = [
   { year: 2004, title: "Achuvinte Amma",           role: "Production Manager",                type: "production", imdb: null },
   { year: 2006, title: "Classmates",               role: "Production Manager",                type: "production", imdb: null },
   { year: 2006, title: "Oruvan",                   role: "Production Manager",                type: "production", imdb: null },

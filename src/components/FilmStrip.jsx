@@ -1,4 +1,4 @@
-﻿export default function FilmStrip() {
+export default function FilmStrip() {
   const holes = Array.from({ length: 60 });
   return (
     <div className="film-strip">

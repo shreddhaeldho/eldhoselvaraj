@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { FILMS, MARQUEE_ITEMS } from "../data/films";
 
 const FILTERS = [

@@ -1,5 +1,6 @@
-﻿import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import useCountUp from "../hooks/useCountUp";
+import { asset } from "../utils/asset";
 
 function StatItem({ value, suffix, label }) {
   const ref = useRef(null);
@@ -41,7 +42,6 @@ export default function Hero() {
       </div>
 
       <div className="hero-content hero-split">
-        {/* Text column */}
         <div className="hero-text-col">
           <div className="hero-eyebrow">
             <span className="eyebrow-line" />
@@ -81,10 +81,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Portrait column */}
         <div className="hero-portrait-col">
           <div className="hero-portrait-frame">
-            <img src="/assets/eldho.jpg" alt="Eldho Selvaraj" className="hero-portrait-img" />
+            <img src={asset("eldho.jpg")} alt="Eldho Selvaraj" className="hero-portrait-img" />
             <div className="hero-portrait-overlay" />
             <div className="hero-portrait-badge">
               <span className="hpb-name">Eldho Selvaraj</span>
@@ -98,7 +97,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Stats */}
       <div className="hero-stats">
         <StatItem value={20} suffix="+" label="Years in Cinema" />
         <StatItem value={55} suffix="+" label="Films" />
